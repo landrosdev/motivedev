@@ -1,0 +1,152 @@
+/* Variable */
+:root{
+    --main_bg : linear-gradient(135deg, #a18cd1, #fbc2eb); /* Dégradé violet-rose */
+    --citaion_card : #1f1f2e; /* Bleu foncé */
+    --text : #ffffff;
+    --autor : #00bfff; /* Bleu clair, met le nom en valeur */
+    --citation_btn : #1f1f2e; /* Bleu principal */
+    --hover_btn : #0056b3; /* bleu foncé pour survol */
+    --icon : #00bfff;
+    --hashtag : #ffffff;
+}
+
+/*  Paramettre de mon style */
+*{
+    margin:  0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+/*  */
+html, body{
+    background: var(--main_bg);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 20px;
+    padding: 20px;
+}
+
+.title h1{
+    color: var(--text);
+    text-align: center;
+}
+
+/* Card citation */
+.citation-card{
+    background-color: var(--citaion_card);
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Image dans la carte */
+.citation-img{
+    display: flex;
+    justify-content: center;
+}
+
+.citation-img img{
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+}
+
+/* Citation */
+.citation-content p{
+    font-size: 1.5rem;
+    color: var(--text);
+}
+
+/* Autor */
+.autor p{
+    color: var(--autor);
+    font-size: 1.2rem;
+}
+
+/* Bouton */
+.citation-buttton{
+    background-color: var(--citation_btn);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.citation-buttton:hover {
+    background-color: var(--hover_btn);
+}
+
+
+.citation-buttton span{
+    color: var(--text);
+    font-size: 1.5rem;
+   
+}
+.citation-buttton i{
+    color: var(--icon);
+    font-size: 1.5rem;
+   
+}
+
+/* Icone à gauche */
+.icon{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  
+}
+
+.icon i{
+    padding: 10px;
+    background-color: var(--citation_btn);
+    color: var(--text);
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+/* Footer */
+.footer{
+    font-size: 1.2rem;
+    color: var(--main_bg);
+}
+
+/* Pour mobile */
+@media screen and (max-width : 768px){
+    html, body{
+        padding: 0;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+       
+    }
+
+    .citation-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Citation */
+.citation-content p{
+   text-align: center;
+}
+}
