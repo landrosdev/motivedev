@@ -8,8 +8,8 @@ Bienvenue dans mon petit projet réalisé dans le cadre du **Mini Défi de la Se
 
 ## 🖼️ Aperçu
 
-![Aperçu du projet](.captures/desktop.PNG)
-![Aperçu du projet](.captures/mobile.PNG)
+![Aperçu du projet](./captures/desktop.PNG)
+![Aperçu du projet](./captures/mobile.PNG)
 
 ---
 
